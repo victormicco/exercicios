@@ -1,6 +1,6 @@
 import { SafeAreaView, StyleSheet } from "react-native";
 import Parimpar from "./src/components/Parimpar";
-
+import styled from "styled-components";
 //import Diferenciar from "./Diferenciar";
 //import  CompPadrao, { Comp1, Comp2 } from './src/components/Multi'
 //import Primeiro from'./src/components/Primeiro'
@@ -8,8 +8,8 @@ import Parimpar from "./src/components/Parimpar";
 //import Aleatorio from './src/components/Aleatorio';
 //import Titulo from './src/components/Titulo';
 //import Botao from './src/components/Botao';
-//import Contador from './src/components/Contador';
-//import { useState } from 'react';
+import Contador from "./src/components/Contador";
+import { useState } from "react";
 //import Temp from './src/components/temp';
 //import Pai from './src/components/direta/Pai'
 //import Pai from "./src/components/indireta/Pai";
@@ -17,13 +17,13 @@ import Parimpar from "./src/components/Parimpar";
 export default function App() {
   return (
     <SafeAreaView style={style.App}>
-      <Parimpar />
+      <Contador inicial={0} />
       {/*
+      <Parimpar />
       <Diferenciar />
       <Pai />
     <Pai />
       <Temp />
-      <Contador inicial={100} />
     <Botao />
     <Aleatorio alea1={0} alea2={1000}/>
       <Titulo principal="cadastro"
