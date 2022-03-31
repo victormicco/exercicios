@@ -10,6 +10,7 @@ import styled from "styled-components";
 //import Botao from './src/components/Botao';
 import Contador from "./src/components/Contador";
 import { useState } from "react";
+import Temporizador from "./src/components/temporizador";
 //import Temp from './src/components/temp';
 //import Pai from './src/components/direta/Pai'
 //import Pai from "./src/components/indireta/Pai";
@@ -17,8 +18,9 @@ import { useState } from "react";
 export default function App() {
   return (
     <SafeAreaView style={style.App}>
-      <Contador inicial={0} />
+      <Temporizador useState />
       {/*
+      <Contador inicial={0} />
       <Parimpar />
       <Diferenciar />
       <Pai />
